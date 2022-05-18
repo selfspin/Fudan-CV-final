@@ -34,7 +34,7 @@ tar -xvf VOCtest_06-Nov-2007.tar
 
 
 ### 4. 模型训练
-使用COCO上Mask R-CNN的骨干作为预训练权重, 训练日志记录在work_dir种
+使用COCO上Mask R-CNN的骨干作为预训练权重, 训练日志记录在work_dir中
 
 参数说明:
 
