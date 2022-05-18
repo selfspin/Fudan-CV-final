@@ -35,6 +35,7 @@ tar -xvf VOCtest_06-Nov-2007.tar
 
 ### 4. 模型训练
 使用COCO上Mask R-CNN的骨干作为预训练权重, 训练日志记录在work_dir种
+--gpu-id: 使用的gpu序号
 ```bash
 nohup \
 python tools/train.py MyConfigs/Setting_COCOpretrain.py \
@@ -52,7 +53,6 @@ python tools/train.py MyConfigs/Setting_init_train.py \
 
 ImageNet预训练模型赋值给骨干网络训练
 ```bash
-CUDA_VISIBLE_DEVICES=1,2,3 \
 nohup \
 python tools/train.py MyConfigs/Setting_ImageNetpretrain.py \
 --auto-scale-lr --gpu-id 1 \
