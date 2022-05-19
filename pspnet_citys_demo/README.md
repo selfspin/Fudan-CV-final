@@ -29,5 +29,4 @@ https://www.pexels.com/video/person-driving-in-a-city-street-under-a-blue-sky-44
 
 #### demo
 
-<video src="drive+mask.mp4"></video>
-
+<img src="figures\drive.mp4_20220510_164318.470.jpg" alt="drive.mp4_20220510_164318.470" style="zoom: 35%;" /><img src="figures\drive.mp4_20220510_164318.470.jpg.png" alt="drive.mp4_20220510_164318.470.jpg" style="zoom: 35%;" />
