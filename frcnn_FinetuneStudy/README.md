@@ -45,7 +45,7 @@ python tools/train.py MyConfigs/Setting_COCOpretrain.py \
 ```
 `--gpu-id`: 使用的gpu序号
 
-随机权重从头开始训练
+2. 随机权重从头开始训练
 ```bash
 nohup \
 python tools/train.py MyConfigs/Setting_init_train.py \
@@ -53,7 +53,7 @@ python tools/train.py MyConfigs/Setting_init_train.py \
 >/dev/null  2>&1 &
 ```
 
-ImageNet预训练模型赋值给骨干网络训练
+3. ImageNet预训练模型赋值给骨干网络训练
 ```bash
 nohup \
 python tools/train.py MyConfigs/Setting_ImageNetpretrain.py \
