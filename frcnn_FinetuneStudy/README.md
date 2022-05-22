@@ -34,7 +34,7 @@ tar -xvf VOCtest_06-Nov-2007.tar
 
 
 ### 4. 模型训练
-1. 使用COCO上Mask R-CNN的骨干作为预训练权重, 训练日志记录在work_dir中
+- 使用COCO上Mask R-CNN的骨干作为预训练权重, 训练日志记录在work_dir中
 
 
 ```bash
@@ -45,7 +45,7 @@ python tools/train.py MyConfigs/Setting_COCOpretrain.py \
 ```
 `--gpu-id`: 使用的gpu序号
 
-2. 随机权重从头开始训练
+- 随机权重从头开始训练
 ```bash
 nohup \
 python tools/train.py MyConfigs/Setting_init_train.py \
@@ -53,7 +53,7 @@ python tools/train.py MyConfigs/Setting_init_train.py \
 >/dev/null  2>&1 &
 ```
 
-3. ImageNet预训练模型赋值给骨干网络训练
+- ImageNet预训练模型赋值给骨干网络训练
 ```bash
 nohup \
 python tools/train.py MyConfigs/Setting_ImageNetpretrain.py \
