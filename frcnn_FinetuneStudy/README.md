@@ -34,11 +34,8 @@ tar -xvf VOCtest_06-Nov-2007.tar
 
 
 ### 4. 模型训练
-使用COCO上Mask R-CNN的骨干作为预训练权重, 训练日志记录在work_dir中
+1. 使用COCO上Mask R-CNN的骨干作为预训练权重, 训练日志记录在work_dir中
 
-参数说明:
-
---gpu-id: 使用的gpu序号
 
 ```bash
 nohup \
@@ -46,6 +43,7 @@ python tools/train.py MyConfigs/Setting_COCOpretrain.py \
 --auto-scale-lr --gpu-id 2 \
 >/dev/null  2>&1 &
 ```
+`--gpu-id`: 使用的gpu序号
 
 随机权重从头开始训练
 ```bash
