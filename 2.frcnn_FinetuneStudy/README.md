@@ -1,6 +1,6 @@
 ## 项目使用指南
 
-`Note`：我们训练好的模型在MyDEMO中有下载与使用说明。
+`Note`：我们训练好的模型在MyDemo.ipynb中有下载与使用说明。
 
 ### 1. 环境配置
 ```bash
@@ -32,7 +32,7 @@ tar -xvf VOCtest_06-Nov-2007.tar
 让与项目文件夹同级新建data文件夹，让数据集以data/VOCdevkit/(VOC2007,VOC2012)的结构存放
 
 ### 3. 模型效果及eval
-详见myDEMO.ipynb
+详见myDemo.ipynb
 
 
 ### 4. 模型训练
