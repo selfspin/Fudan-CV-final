@@ -39,6 +39,21 @@ python main_lincls.py \
 
 ### Models
 
+测试模型（以cifar10，训练全网络为例）：
+
+```
+python main_lincls.py \
+  -a resnet18 \
+  --lr 30.0 \
+  --lr-b 1e-5 \
+  --batch-size 256 \
+  --pretrained [your checkpoint path]/checkpoint_0100.pth.tar \
+  --dist-url 'tcp://localhost:10001' --multiprocessing-distributed --world-size 1 --rank 0 \
+  --cifar10 \
+  --resume cifar10_v1_224_fb_best.pth.tar \
+  --evaluate
+```
+
 各模型参数见
 
 https://drive.google.com/drive/folders/1EXPIBuNXIAtL9EBc0vgO987CK3mJmLHK?usp=sharing
