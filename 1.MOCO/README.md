@@ -39,3 +39,6 @@ python main_lincls.py \
 
 ### Models
 
+各模型参数见
+
+https://drive.google.com/drive/folders/1EXPIBuNXIAtL9EBc0vgO987CK3mJmLHK?usp=sharing
