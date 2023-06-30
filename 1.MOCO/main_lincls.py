@@ -377,7 +377,7 @@ def main_worker(gpu, ngpus_per_node, args):
             train=True,
             transform=transforms.Compose(
                 [
-                    transforms.RandomResizedCrop(32),
+                    transforms.RandomResizedCrop(224),
                     transforms.RandomHorizontalFlip(),
                     transforms.ToTensor(),
                     normalize,
@@ -390,7 +390,7 @@ def main_worker(gpu, ngpus_per_node, args):
             train=True,
             transform=transforms.Compose(
                 [
-                    transforms.RandomResizedCrop(32),
+                    transforms.RandomResizedCrop(224),
                     transforms.RandomHorizontalFlip(),
                     transforms.ToTensor(),
                     normalize,
@@ -402,7 +402,7 @@ def main_worker(gpu, ngpus_per_node, args):
             traindir,
             transforms.Compose(
                 [
-                    transforms.RandomResizedCrop(32),
+                    transforms.RandomResizedCrop(224),
                     transforms.RandomHorizontalFlip(),
                     transforms.ToTensor(),
                     normalize,
@@ -430,8 +430,8 @@ def main_worker(gpu, ngpus_per_node, args):
             train=False,
             transform=transforms.Compose(
                 [
-                    transforms.Resize(32),
-                    transforms.CenterCrop(32),
+                    transforms.Resize(256),
+                    transforms.CenterCrop(224),
                     transforms.ToTensor(),
                     normalize,
                 ]
@@ -443,8 +443,8 @@ def main_worker(gpu, ngpus_per_node, args):
             train=False,
             transform=transforms.Compose(
                 [
-                    transforms.Resize(32),
-                    transforms.CenterCrop(32),
+                    transforms.Resize(256),
+                    transforms.CenterCrop(224),
                     transforms.ToTensor(),
                     normalize,
                 ]
@@ -455,8 +455,8 @@ def main_worker(gpu, ngpus_per_node, args):
             valdir,
             transforms.Compose(
                 [
-                    transforms.Resize(32),
-                    transforms.CenterCrop(32),
+                    transforms.Resize(256),
+                    transforms.CenterCrop(224),
                     transforms.ToTensor(),
                     normalize,
                 ]
